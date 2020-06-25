@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1169
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolfgang", "Wolfgang.csproj", "{0F5ACAE2-F1A5-4B0B-99AC-899FC086B645}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfgangWebApp", "WolfgangWebApp.csproj", "{0F5ACAE2-F1A5-4B0B-99AC-899FC086B645}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WGDatabase", "..\WGDatabase_project\WGDatabase\WGDatabase.sqlproj", "{B97FBA8A-A375-446E-B946-F05D77ABAEAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "..\DataAccess\DataAccess.csproj", "{3B4ED32D-E8A4-4A19-854F-89C02C2514C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WG_Data_Library", "..\DataAccess\WG_Data_Library.csproj", "{3B4ED32D-E8A4-4A19-854F-89C02C2514C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WGDataManager", "..\WGDataManager\WGDataManager.csproj", "{C4267115-8C54-49ED-A323-48251A10FE4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{3B4ED32D-E8A4-4A19-854F-89C02C2514C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B4ED32D-E8A4-4A19-854F-89C02C2514C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B4ED32D-E8A4-4A19-854F-89C02C2514C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4267115-8C54-49ED-A323-48251A10FE4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4267115-8C54-49ED-A323-48251A10FE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4267115-8C54-49ED-A323-48251A10FE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4267115-8C54-49ED-A323-48251A10FE4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
