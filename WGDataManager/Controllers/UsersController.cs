@@ -20,15 +20,15 @@ namespace WGDataManager.Controllers
         {
             string userId = RequestContext.Principal.Identity.GetUserId();
 
-            var models = userData.GetUserById(userId);
+            var models = userData.GetUserById(userId).ToList();
             return models;
         }
            
 
-        public List<UserModel> GetUsers(string id)
+        public UserModel GetUsers(string id)
         {
 
-            var model = userData.GetUserById(id);
+            var model = userData.GetUserById(id).First<UserModel>();
 
             return model;
 

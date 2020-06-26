@@ -8,27 +8,18 @@ namespace WG_Data_Library.DataAccess
 {
     public class UserData
     {
+        //The is the user's information
+
         public List<UserModel> GetUserById(string Id)
         {
 
             SQLDataAccess sql = new SQLDataAccess();
-
-            var p = new { Id = Id };
-
-            var output = sql.LoadData<UserModel, dynamic>("dbo.spUserLookup", p, "DefaultConnection");
-
-            return output;
-        }
-
-        public List<UserModel> GetUsers()
-        {
-            UserModel user =new UserModel();
-
-            SQLDataAccess sql = new SQLDataAccess();
             
-            var output = sql.LoadData<UserModel, dynamic>("dbo.spUsersLookup", user, "DefaultConnection");
+            var output = sql.LoadData<UserModel, dynamic>("dbo.spUserLookup", new { Id= Id}, "DefaultConnection");
 
             return output;
         }
+
+       
     }
 }
