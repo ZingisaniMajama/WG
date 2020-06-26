@@ -15,7 +15,7 @@ namespace WG_Data_Library.DataAccess
 
             var p = new { Id = Id };
 
-            var output = sql.LoadData<UserModel, dynamic>("dbo.spUserLookup", p, "DefaultCollection");
+            var output = sql.LoadData<UserModel, dynamic>("dbo.spUserLookup", p, "DefaultConnection");
 
             return output;
         }

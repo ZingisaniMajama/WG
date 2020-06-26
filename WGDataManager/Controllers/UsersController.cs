@@ -16,21 +16,19 @@ namespace WGDataManager.Controllers
     {
 
         UserData userData = new UserData();
-        public UserModel GetUsers()
+        public List<UserModel> GetUsers()
         {
-          
             string userId = RequestContext.Principal.Identity.GetUserId();
 
-            var models = userData.GetUserById(userId).First();
-
+            var models = userData.GetUserById(userId);
             return models;
         }
            
 
-        public UserModel GetUsers(string id)
+        public List<UserModel> GetUsers(string id)
         {
 
-            var model = userData.GetUserById(id).First();
+            var model = userData.GetUserById(id);
 
             return model;
 

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Dapper;
+
 //The data access Library 
 namespace WG_Data_Library.Intenal.DataAccess
 {
