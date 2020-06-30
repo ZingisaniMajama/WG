@@ -525,8 +525,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\APIHelper.cs" />
-    <Compile Include="Helpers\PasswordboxHelper.cs" />
+    <Compile Include="Helpers\APIHelpers.cs" />
+    <Compile Include="Helpers\IAPIHelpers.cs" />
+    <Compile Include="Helpers\PasswordboxHelpers.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -633,6 +634,13 @@
       <Project>{0E6E0CF5-D605-4ED2-AC90-558FD2B6FABC}</Project>
       <Name>WG_Data_Library</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Wolfgang\WolfgangUI.csproj">
+      <Project>{0F5ACAE2-F1A5-4B0B-99AC-899FC086B645}</Project>
+      <Name>WolfgangUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

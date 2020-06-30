@@ -9,9 +9,26 @@ namespace Wolfgang
 {
     public partial class SiteMaster : MasterPage
     {
+        public static string loggedInUser { get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (loggedInUser != null)
+            {
+                lblusername.InnerText = loggedInUser;
+            }
+            else
+            {
+                displayLoggedInUser(loggedInUser);
+            }
+           
+            
+        }
+        
+        
+        public void displayLoggedInUser(string user)
+        {
+            loggedInUser = user;
         }
     }
 }
